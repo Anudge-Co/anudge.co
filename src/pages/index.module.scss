@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    font: 300 24px/1.5 var(--font-family);
+    color: rgba(205, 201, 201, 0.6);
+  }
+}

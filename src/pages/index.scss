@@ -1,0 +1,21 @@
+@import '../styles/reset';
+
+:root {
+  --font-family: 'Google Sans', sans-serif;
+}
+
+body {
+  font: 16px/1.6 var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, #000 70.2%);
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+}
