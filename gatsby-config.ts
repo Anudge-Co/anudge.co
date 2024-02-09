@@ -12,13 +12,21 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sass',
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `inter:300,400,700`, // you can also specify font weights and styles
+    //     ],
+    //     display: 'swap',
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          `google sans:300,400,700`, // you can also specify font weights and styles
-        ],
-        display: 'swap',
+        typekit: {
+          id: 'vbz1ioj',
+        },
       },
     },
     {

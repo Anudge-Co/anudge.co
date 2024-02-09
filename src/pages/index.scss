@@ -1,14 +1,36 @@
 @import '../styles/reset';
 
+// Articulat CF Light
+// font-family: "articulat-cf", sans-serif;
+// font-weight: 300;
+// font-style: normal;
+
+// Articulat CF Medium
+// font-family: "articulat-cf", sans-serif;
+// font-weight: 600;
+// font-style: normal;
+
+// Articulat CF Bold
+// font-family: "articulat-cf", sans-serif;
+// font-weight: 800;
+// font-style: normal;
+
 :root {
-  --font-family: 'Google Sans', sans-serif;
+  --font-family: 'articulat-cf', sans-serif;
 }
 
 body {
   font: 16px/1.6 var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, #000 70.2%);
+  background: #060606;
+  // background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, #000 70.2%);
+  // background: radial-gradient(
+  //   88.73% 100% at 50% 0%,
+  //   rgba(157, 198, 255, 0.3) 0%,
+  //   rgba(0, 64, 255, 0) 74.5%,
+  //   rgba(0, 64, 255, 0) 100%
+  // );
   color: #fff;
 }
 
