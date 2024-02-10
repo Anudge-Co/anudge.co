@@ -3,6 +3,8 @@ import type { HeadFC, PageProps } from 'gatsby';
 import cx from 'classnames';
 
 import srcLogo from '../images/anudge-logo.svg';
+import srcArrow from '../images/icon-arrow.svg';
+import srcProductTile from '../images/product-tile.svg';
 
 import './index.scss';
 import * as styles from './index.module.scss';
@@ -17,6 +19,10 @@ const IndexPage: React.FC<PageProps> = () => {
               <img src={srcLogo} height={48} alt="Anudge" />
             </h1>
             <h2>The digital creative enabler.</h2>
+            <a href="mailto:hello@anudge.co" className={styles.btnContactUs}>
+              <span>Contact Us</span>
+              <img src={srcArrow} width={24} height={24} alt="Contact Us" />
+            </a>
           </article>
         </section>
         <section className={styles.wrapper}>
@@ -42,7 +48,17 @@ const IndexPage: React.FC<PageProps> = () => {
           </article>
         </section>
         <section className={cx(styles.wrapper, styles.product)}>
-          <article></article>
+          <article>
+            <h1 className={styles.products}>PRODUCTS</h1>
+            <figure>
+              <img src={srcProductTile} alt="Tokenz" width={224} height={224} />
+              <figcaption>
+                Redefining commerce for
+                <br />
+                digital content providers
+              </figcaption>
+            </figure>
+          </article>
         </section>
         <section className={styles.wrapper}>
           <article>
@@ -67,4 +83,6 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => (
+  <title>Anudge | The digital creative enabler.</title>
+);

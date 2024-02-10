@@ -1,0 +1,23 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'desktop' {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == 'iPad Pro' {
+    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+      @content;
+    }
+  } @else if $breakpoint == 'tablet' {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $breakpoint == 'mobile' {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == 'tabletAndMobile' {
+    @media only screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+}

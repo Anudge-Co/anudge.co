@@ -1,0 +1,24 @@
+// U+00A5 ¥
+// U+0025 %
+// U+002C ,
+// U+002E .
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('../../assets/fonts/FilsonPro-Book.woff2') format('woff2'),
+    url('../../assets/fonts/FilsonPro-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0030-0039, U+00A5, U+0025, U+002C, U+002E;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('../../assets/fonts/FilsonPro-Medium.woff2') format('woff2'),
+    url('../../assets/fonts/FilsonPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0030-0039, U+00A5, U+0025, U+002C, U+002E;
+}
